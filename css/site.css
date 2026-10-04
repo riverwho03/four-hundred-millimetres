@@ -159,6 +159,7 @@ h1 {
 .hero-copy .wrap { max-width: none; padding-inline: clamp(16px, 4vw, 56px); padding-bottom: clamp(28px, 5vw, 56px); }
 .hero-text { display: grid; gap: 14px; max-width: min(29vw, 480px); pointer-events: auto; }
 .hero-text h1 { font-size: clamp(2.6rem, 6vw, 5.4rem); }
+.hero-text .eyebrow { text-wrap: balance; }      /* a long line breaks into two even lines, not one word on its own */
 @media (max-width: 860px) {
   .hero-photo { aspect-ratio: 4 / 3; max-height: none; }
   .hero-photo::before { background: linear-gradient(180deg, rgba(13, 14, 11, 0) 60%, var(--bg) 100%); }
