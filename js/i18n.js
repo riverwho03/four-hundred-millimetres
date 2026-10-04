@@ -74,7 +74,7 @@
       'lb.hint': 'Swipe or use the arrow keys for the next photo.',
 
       'story.doc': 'Our Story · Four Hundred Millimetres',
-      'story.eyebrow': 'Tanzania · September 2026',
+      'story.eyebrow': 'Tanzania · Tarangire, Serengeti, Ngorongoro',
       'story.h1': 'Our Story',
       'story.hello': 'Hello from River and Calvin!',
       'story.p1': 'In mid-September 2026 we spent our honeymoon on safari in Tanzania, from the great river crossing in the northern Serengeti to the floor of Ngorongoro Crater. We loved every minute of it.',
@@ -449,7 +449,7 @@
       'lb.hint': '左右滑动或使用方向键切换照片。',
 
       'story.doc': '我们的故事 · 四百毫米',
-      'story.eyebrow': '坦桑尼亚 · 2026 年 9 月',
+      'story.eyebrow': '坦桑尼亚 · 塔兰吉雷、塞伦盖蒂、恩戈罗恩戈罗',
       'story.h1': '我们的故事',
       'story.hello': '你好，我们是 River 和 Calvin！',
       'story.p1': '2026 年 9 月中旬，我们在坦桑尼亚度过了猎游蜜月：从塞伦盖蒂北部壮观的角马渡河，到恩戈罗恩戈罗火山口的谷底。每一分钟我们都无比享受。',
