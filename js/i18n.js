@@ -295,7 +295,7 @@
       'roller.facts.h': 'Fun facts',
       'roller.fact1': 'It hunts from a high perch like this one, then swoops down on insects, scorpions, centipedes, snails and even small birds.',
       'roller.fact2': 'In courtship it dives from high up and rolls from side to side as it levels out. That rolling flight gave rollers their name.',
-      'roller.fact3': 'For such a beautiful bird, its call is surprisingly rough: a harsh, sawing “rak rak rak”. You can hear it in Frame 08.',
+      'roller.fact3': 'For such a beautiful bird, its call is surprisingly rough: a harsh, sawing “rak rak rak”. You can hear it in Frame 07.',
 
       'cross.doc': 'The Crossing · Four Hundred Millimetres',
       'cross.h1': 'The Crossing',
@@ -669,7 +669,7 @@
       'roller.facts.h': '趣味小知识',
       'roller.fact1': '它常常停在这样的高处观察，然后俯冲下来捕捉昆虫、蝎子、蜈蚣、蜗牛，甚至小鸟。',
       'roller.fact2': '求偶时，它会从高空俯冲而下，在拉平时左右翻滚。佛法僧的英文名 roller（翻滚者）就来自这种翻滚飞行。',
-      'roller.fact3': '这么漂亮的鸟，叫声却出奇地粗哑：像拉锯一样的“拉、拉、拉”。在第 08 幅里可以听到。',
+      'roller.fact3': '这么漂亮的鸟，叫声却出奇地粗哑：像拉锯一样的“拉、拉、拉”。在第 07 幅里可以听到。',
 
       'cross.doc': '渡河 · 四百毫米',
       'cross.h1': '渡河',
