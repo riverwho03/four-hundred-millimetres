@@ -134,7 +134,7 @@
 
       'stare.doc': 'The Stare-Down · Four Hundred Millimetres',
       'stare.h1': 'The Stare-Down',
-      'stare.lede': 'A spotted hyena stands in muddy water with its head tipped back. Something above it has its full attention. Zoom in to take a closer look.',
+      'stare.lede': 'A spotted hyena stands in muddy water in Ngorongoro. Something above it has its full attention. Zoom in to take a closer look.',
       'stare.q': 'Why is the hyena staring at the gull?',
       'stare.opt.food': 'Its food is being eyed by the gull.',
       'stare.opt.lift': 'It is asking the gull for a lift across the water.',
@@ -145,9 +145,6 @@
       'stare.fb.first': 'Right on your first try.',
       'stare.fb.tries': 'Got it on try {n}.',
       'stare.fb.wrong': 'Not quite. Try another answer.',
-      'stare.story.h': 'The story',
-      'stare.story.p1': 'A spotted hyena stands in the shallows with its head tipped back, watching a grey-headed gull hover overhead. The gull has its eye on the hyena’s food. The hyena has its eye on the gull.',
-      'stare.story.p2': 'Our title for this frame is “Predator, thief and the prize”: the hyena, the gull and the food.',
       'stare.answer.h': 'The answer, 13 seconds later',
       'stare.answer.alt': 'The spotted hyena wading through the water with a piece of red meat in its mouth, while two grey-headed gulls fly close behind.',
       'stare.answer.cap': 'Here is the prize: the hyena carries its food away through the water, and the gulls follow.',
@@ -158,7 +155,7 @@
 
       'finish.doc': 'Photo Finish · Four Hundred Millimetres',
       'finish.h1': 'Photo Finish',
-      'finish.lede': 'This jackal was caught mid-run, and the grass behind it is smeared into streaks. Is it quicker than a leopard? Zoom in to see how sharp it is.',
+      'finish.lede': 'Is this jackal quicker than a leopard? Zoom in to see how sharp it is.',
       'finish.photoAlt': 'A jackal trotting fast across dry grass, with the grass behind it blurred into horizontal streaks.',
       'finish.q': 'Who is faster, a jackal or a leopard?',
       'finish.pick.jackal': 'Jackal',
@@ -174,7 +171,6 @@
       'finish.outcome.one': '{who} wins by about {m} metre: {a} s against {b} s.',
       'finish.outcome.many': '{who} wins by about {m} metres: {a} s against {b} s.',
       'finish.watch': 'Watch again',
-      'finish.fine': 'Top speeds are estimates, and sources do not agree exactly. These are commonly quoted figures, and the gap is small enough that either animal could win on a given day. Treat it as a photo finish.',
       'finish.facts.h': 'Fun facts',
       'finish.fact1': 'This looks like a black-backed jackal. The black saddle with silver streaks down its back gives the species its name.',
       'finish.fact2': 'Black-backed jackals often pair for life, and older pups sometimes stay on to help raise the next litter.',
@@ -187,7 +183,7 @@
 
       'zebra.doc': 'Zebra Vision · Four Hundred Millimetres',
       'zebra.h1': 'Zebra Vision',
-      'zebra.lede': 'A zebra’s face, up close: velvet nose, long whiskers, bold stripes. Its eyes sit high on the sides of its head. How far round can it see without turning?',
+      'zebra.lede': 'How far round can a zebra see without turning its head?',
       'zebra.photoAlt': 'A close-up of a zebra’s face: black and white stripes, a grey velvet nose and long whiskers against a soft brown background.',
       'zebra.q1': 'How many degrees, out of 360, can a zebra see?',
       'zebra.how': 'Drag either needle to open or close the shaded fan, or use the arrow keys. The shaded part is how much of the circle you think a zebra can see without turning its head.',
@@ -220,7 +216,6 @@
       'zebra.fact1': 'With an eye on each side of its head, a zebra can graze and keep watch at the same time.',
       'zebra.fact3': 'Zebras have wide, horizontal pupils that take in a broad view along the ground. When a grazing animal like a zebra lowers its head, its eyes rotate to keep the pupils level.',
       'zebra.fact4': 'In horses, the zebra’s close cousins, the two eyes overlap only in a narrow zone of about 65° straight ahead. That is where they judge distance best.',
-      'zebra.fine': 'An honest note: nobody has measured a zebra’s field of view as carefully as a horse’s (about 350°). Published figures for zebras range from about 320° to 350°, so the dial counts anything in that bracket as right.',
 
       'gaz.doc': 'Grooming Time · Four Hundred Millimetres',
       'gaz.h1': 'Grooming Time',
@@ -316,9 +311,6 @@
       'cross.res.all': 'You found all {total}',
       'cross.res.some': 'You found {f} of {total}',
       'cross.res.text': 'There are {total} wildebeest in this frame: four wading across at the bottom right, one in the crocodile’s jaws in the middle, and one hurt on the far bank. Any you missed now have dashed circles.',
-      'cross.story.h': 'The story',
-      'cross.story.p1': 'This was the Great Migration in the northern Serengeti, where hundreds of wildebeest were crossing the Mara River. In the middle of the frame a crocodile has taken one of them. All you can see is a leg above the water.',
-      'cross.story.p2': 'Another wildebeest, hurt, perhaps by the same crocodile, is resting on the far bank.',
       'cross.facts.h': 'Fun facts',
       'cross.fact1': 'In the Serengeti, a hurt animal rarely survives for long. Lions, hyenas and crocodiles are quick to pick out the weak and the slow.',
       'cross.fact2': 'Each year well over a million wildebeest, with hundreds of thousands of zebras and gazelles, follow the rains on a great loop through the Serengeti and Kenya’s Maasai Mara.',
@@ -326,7 +318,7 @@
 
       'goaway.doc': 'Go Away! · Four Hundred Millimetres',
       'goaway.h1': 'Go Away!',
-      'goaway.lede': 'A bare-faced go-away-bird keeps watch from a thorn tree, crest raised. Go-away-birds are named after their loud calls. Can you pick its voice out of three?',
+      'goaway.lede': 'Kinda look like Donald Trump? Go-away-birds are named after their loud calls. Can you pick its voice out of three?',
       'goaway.photoAlt': 'A grey bird with a tall crest, a bare black face and a white chest, perched in a thorny tree against a pale sky.',
       'goaway.q': 'Which sound is the go-away-bird?',
       'goaway.how': 'Play all three, then choose. Turn your sound on.',
@@ -358,7 +350,7 @@
 
       'builder.doc': 'The Builder · Four Hundred Millimetres',
       'builder.h1': 'The Builder',
-      'builder.lede': 'High in an acacia sits a dome of sticks too big to wrap your arms around, with three rooms inside. A hamerkop built it. But which bird is the hamerkop?',
+      'builder.lede': 'This photo was taken in Tarangire. High in an acacia sits a dome of sticks too big to wrap your arms around, with three rooms inside! 3-bedroom house only! A hamerkop built it. Which bird is the hamerkop?',
       'builder.photoAlt': 'A huge, dome-shaped nest of sticks wedged into the fork of an acacia tree, seen against a pale sky.',
       'builder.q': 'Which of these birds is the hamerkop?',
       'builder.hint': 'Give me a hint',
@@ -384,7 +376,7 @@
       'builder.fact2': 'One nest can take a pair 10 to 14 weeks to build, using around 8,000 sticks and bunches of grass.',
       'builder.fact3': 'Hamerkops are compulsive builders: a pair may make three to five nests a year, whether they breed or not.',
       'builder.credits.h': 'Photo credit',
-      'builder.credit': 'Hamerkop photo: Charles J. Sharp, Arusha National Park, Tanzania (cropped). The goose, secretarybird and nest photos are the photographer’s own.'
+      'builder.credit': 'Hamerkop photo: Charles J. Sharp, Arusha National Park, Tanzania (cropped). The goose, secretarybird and nest photos were taken by River.'
     },
 
     zh: {
@@ -509,7 +501,7 @@
 
       'stare.doc': '对视 · 四百毫米',
       'stare.h1': '对视',
-      'stare.lede': '一只斑鬣狗站在浑浊的水里，头向后仰着。头顶上有什么东西，牢牢吸引了它全部的注意力。放大看看吧。',
+      'stare.lede': '一只斑鬣狗站在恩戈罗恩戈罗浑浊的水里。头顶上有什么东西，牢牢吸引了它全部的注意力。放大看看吧。',
       'stare.q': '鬣狗为什么盯着那只海鸥？',
       'stare.opt.food': '它的食物被海鸥盯上了。',
       'stare.opt.lift': '它想请海鸥载它飞过水面。',
@@ -520,9 +512,6 @@
       'stare.fb.first': '第一次就答对了！',
       'stare.fb.tries': '第 {n} 次答对了。',
       'stare.fb.wrong': '不太对，换个答案试试。',
-      'stare.story.h': '照片背后的故事',
-      'stare.story.p1': '一只斑鬣狗站在浅水里，头向后仰，看着头顶盘旋的灰头鸥。海鸥盯上了鬣狗的食物，鬣狗则盯着海鸥。',
-      'stare.story.p2': '我们给这幅照片起的名字是《猎手、窃贼与战利品》：鬣狗、海鸥，还有那份食物。',
       'stare.answer.h': '答案就在 13 秒后',
       'stare.answer.alt': '斑鬣狗叼着一块红色的肉在水中蹚行，两只灰头鸥紧跟在它身后飞。',
       'stare.answer.cap': '这就是那份“战利品”：鬣狗叼着食物穿过水面，海鸥一路紧追。',
@@ -533,7 +522,7 @@
 
       'finish.doc': '毫厘之差 · 四百毫米',
       'finish.h1': '毫厘之差',
-      'finish.lede': '这只胡狼是在奔跑途中被拍下的，身后的草地被拉成了一道道条纹。它比花豹跑得更快吗？放大看看它有多清晰。',
+      'finish.lede': '这只胡狼比花豹跑得更快吗？放大看看它有多清晰。',
       'finish.photoAlt': '一只胡狼在干枯的草地上快步奔跑，身后的草被拉成了一道道横向的条纹。',
       'finish.q': '谁跑得更快：胡狼还是花豹？',
       'finish.pick.jackal': '胡狼',
@@ -549,7 +538,6 @@
       'finish.outcome.one': '{who}领先约 {m} 米：{a} 秒对 {b} 秒。',
       'finish.outcome.many': '{who}领先约 {m} 米：{a} 秒对 {b} 秒。',
       'finish.watch': '再看一次',
-      'finish.fine': '最高时速只是估计值，不同资料的数字并不完全一致。这里用的是常见的说法，两者差距很小，哪一只赢都有可能。就把它当作一场毫厘之差的冲线吧。',
       'finish.facts.h': '趣味小知识',
       'finish.fact1': '这看起来是一只黑背胡狼。背上带银色条纹的黑色“马鞍”，就是这个物种名字的由来。',
       'finish.fact2': '黑背胡狼常常终身配对，年长的幼崽有时会留下来，帮忙养育下一窝。',
@@ -562,7 +550,7 @@
 
       'zebra.doc': '斑马的视野 · 四百毫米',
       'zebra.h1': '斑马的视野',
-      'zebra.lede': '近距离看斑马的脸：天鹅绒般的鼻子、长长的胡须、醒目的条纹。它的眼睛长在头部两侧偏上的位置。不转头的话，它能看到身边多大的范围？',
+      'zebra.lede': '斑马不转头的话，能看到身边多大的范围？',
       'zebra.photoAlt': '斑马面部特写：黑白条纹、灰色天鹅绒般的鼻子和长长的胡须，背景是柔和的棕色。',
       'zebra.q1': '在 360 度中，斑马能看到多少度？',
       'zebra.how': '拖动任意一根指针，把阴影扇形张开或收拢，也可以使用方向键。阴影部分就是你认为斑马不转头时能看到的范围。',
@@ -595,7 +583,6 @@
       'zebra.fact1': '斑马头部两侧各有一只眼睛，所以它能一边吃草，一边放哨。',
       'zebra.fact3': '斑马的瞳孔又宽又扁，呈水平方向，能把地面的宽阔景象尽收眼底。像斑马这样的食草动物低头吃草时，眼球会转动，让瞳孔保持水平。',
       'zebra.fact4': '马是斑马的近亲。马的两只眼睛只在正前方约 65° 的狭窄区域内重叠，那里是它们判断距离最准的地方。',
-      'zebra.fine': '说句实话：还没有人像测量马的视野（约 350°）那样仔细地测量过斑马的视野。已发表的斑马数据大约在 320° 到 350° 之间，所以表盘上落在这个范围内的答案都算对。',
 
       'gaz.doc': '梳理时间 · 四百毫米',
       'gaz.h1': '梳理时间',
@@ -691,9 +678,6 @@
       'cross.res.all': '{total} 头全部找到了',
       'cross.res.some': '你找到了 {total} 头中的 {f} 头',
       'cross.res.text': '这幅照片里共有 {total} 头角马：右下角正在蹚水过河的四头，河中央鳄鱼嘴里的一头，还有对岸受伤的一头。你漏掉的那些，现在都用虚线圈了出来。',
-      'cross.story.h': '照片背后的故事',
-      'cross.story.p1': '这是塞伦盖蒂北部的角马大迁徙，成百上千头角马正在横渡马拉河。画面中央，一条鳄鱼拖走了其中一头，你只能看到水面上的一条腿。',
-      'cross.story.p2': '另一头角马受了伤，也许就是被同一条鳄鱼所伤，正躺在对岸休息。',
       'cross.facts.h': '趣味小知识',
       'cross.fact1': '在塞伦盖蒂，受伤的动物很少能活得长久。狮子、鬣狗和鳄鱼很快就会盯上虚弱和行动迟缓的个体。',
       'cross.fact2': '每年都有一百多万头角马，连同数十万匹斑马和许多瞪羚，追随雨水，在塞伦盖蒂和肯尼亚的马赛马拉之间绕一个大圈。',
@@ -701,7 +685,7 @@
 
       'goaway.doc': '走开！ · 四百毫米',
       'goaway.h1': '走开！',
-      'goaway.lede': '一只裸脸蕉鹃竖起羽冠，在荆棘树上放哨。这类鸟的英文名叫 go-away-bird，意思是“走开鸟”，名字来自它们响亮的叫声。你能从三段声音里认出它吗？',
+      'goaway.lede': '是不是有点像唐纳德·特朗普？这类鸟的英文名叫 go-away-bird，意思是“走开鸟”，名字来自它们响亮的叫声。你能从三段声音里认出它吗？',
       'goaway.photoAlt': '一只灰色的鸟，头顶高高的羽冠，脸部裸露呈黑色，胸口雪白，停在带刺的树上，背景是淡色的天空。',
       'goaway.q': '哪一段是“走开鸟”的叫声？',
       'goaway.how': '三段都听一听，再做选择。记得打开声音。',
@@ -733,7 +717,7 @@
 
       'builder.doc': '筑巢者 · 四百毫米',
       'builder.h1': '筑巢者',
-      'builder.lede': '高高的金合欢树上，架着一个用树枝搭成的圆顶巢，大到你张开双臂都抱不过来，里面还有三个“房间”。它是锤头鹳建的。可是，哪一只才是锤头鹳？',
+      'builder.lede': '这张照片摄于塔兰吉雷。高高的金合欢树上，架着一个用树枝搭成的圆顶巢，大到你张开双臂都抱不过来，里面还有三个“房间”！妥妥的三居室！它是锤头鹳建的。哪一只才是锤头鹳？',
       'builder.photoAlt': '一个巨大的圆顶形树枝巢，卡在金合欢树的枝杈之间，背景是淡色的天空。',
       'builder.q': '这几只鸟中，哪一只是锤头鹳？',
       'builder.hint': '给我点提示',
@@ -759,7 +743,7 @@
       'builder.fact2': '一对锤头鹳建一个巢可能要花 10 到 14 周，用掉大约 8000 根树枝和一束束干草。',
       'builder.fact3': '锤头鹳是停不下来的建筑师：不管繁不繁殖，一对锤头鹳一年可能要建三到五个巢。',
       'builder.credits.h': '照片来源',
-      'builder.credit': '锤头鹳照片：Charles J. Sharp 摄于坦桑尼亚阿鲁沙国家公园（经过裁剪）。埃及雁、蛇鹫和鸟巢的照片均为摄影师本人拍摄。'
+      'builder.credit': '锤头鹳照片：Charles J. Sharp 摄于坦桑尼亚阿鲁沙国家公园（经过裁剪）。埃及雁、蛇鹫和鸟巢的照片由 River 拍摄。'
     }
   };
 
