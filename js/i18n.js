@@ -44,7 +44,7 @@
       'shot.aria': 'Camera settings: {s} second shutter, aperture f/{f}, ISO {iso}, {mm} millimetre lens',
 
       'home.doc': 'Four Hundred Millimetres',
-      'home.eyebrow': 'Tanzania · Tarangire, Serengeti, Ngorongoro',
+      'home.eyebrow': 'Tanzania · Tarangire, Serengeti, Ngorongoro Crater',
       'home.h1': 'Four Hundred Millimetres',
       'home.heroAlt': 'Lion cubs asleep in the dry grass, one big paw pad facing the camera.',
       'stare.photoAlt': 'A spotted hyena standing in brown water, tilting its head back to watch a grey-headed gull flying above it.',
@@ -411,7 +411,7 @@
       'shot.aria': '相机参数：快门 {s} 秒，光圈 f/{f}，ISO {iso}，{mm} 毫米镜头',
 
       'home.doc': '四百毫米',
-      'home.eyebrow': '坦桑尼亚 · 塔兰吉雷、塞伦盖蒂、恩戈罗恩戈罗',
+      'home.eyebrow': '坦桑尼亚 · 塔兰吉雷、塞伦盖蒂、恩戈罗恩戈罗火山口',
       'home.h1': '四百毫米',
       'home.heroAlt': '几只小狮子在干草丛中熟睡，一只大大的肉垫正对着镜头。',
       'stare.photoAlt': '一只斑鬣狗站在浑浊的棕色水里，仰起头看着头顶飞过的一只灰头鸥。',
