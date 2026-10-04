@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="finish.doc">Photo Finish · Four Hundred Millimetres</title>
+<meta name="description" content="A jackal caught mid-run. Is it faster than a leopard?">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d0e0b'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23ece9de' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='5' fill='none' stroke='%23d6283c' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="topbar" data-topbar></header>
+
+<main class="wrap" data-frame="photo-finish">
+  <div class="page-head">
+    <p class="eyebrow" data-frame-label></p>
+    <h1 data-i18n="finish.h1">Photo Finish</h1>
+    <p class="lede" data-i18n="finish.lede">This jackal was caught mid-run, and the grass behind it is smeared into streaks. Is it quicker than a leopard? Zoom in to see how sharp it is.</p>
+  </div>
+
+  <section class="quiz" aria-labelledby="q">
+    <figure class="frame">
+      <div class="hud"><span data-frame-label></span></div>
+      <div class="stage-slot" style="--ar: 2000 / 1331">
+        <div class="vf zoomable" id="stage" tabindex="0" role="group" aria-label="Photo. Use the zoom buttons, or the plus, minus and arrow keys, to look closer." data-i18n-attr="aria-label:zoom.stage">
+          <img src="images/jackal.jpg" data-full="images/jackal-large.jpg" data-full-width="2765" width="2000" height="1331" alt="A jackal trotting fast across dry grass, with the grass behind it blurred into horizontal streaks." data-i18n-attr="alt:finish.photoAlt">
+        </div>
+      </div>
+    </figure>
+
+    <h2 class="h2" id="q" data-i18n="finish.q">Who is faster, a jackal or a leopard?</h2>
+    <div class="pick" id="pick" role="group" aria-labelledby="q">
+      <button class="pick-btn" type="button" data-pick="jackal">
+        <span class="pick-name" data-i18n="finish.pick.jackal">Jackal</span>
+        <span class="pick-sub" data-i18n="finish.sub.jackal">Lean, long-legged and always on the move.</span>
+      </button>
+      <button class="pick-btn" type="button" data-pick="leopard">
+        <span class="pick-name" data-i18n="finish.pick.leopard">Leopard</span>
+        <span class="pick-sub" data-i18n="finish.sub.leopard">A muscular big cat that ambushes, then sprints.</span>
+      </button>
+    </div>
+
+    <div class="result" id="result" hidden>
+      <p class="verdict" id="verdict" role="status" aria-live="polite"></p>
+
+      <div class="race" id="race">
+        <div class="race-head"><span data-i18n="finish.raceL">100 m dash, real time</span><span data-i18n="finish.raceR">Top speeds as commonly quoted</span></div>
+        <div class="lane" data-who="jackal">
+          <div class="who"><span data-i18n="finish.pick.jackal">Jackal</span><small>60 km/h</small></div>
+          <div class="track"><div class="trail"></div><div class="runner"></div></div>
+          <div class="time">0.0 s</div>
+        </div>
+        <div class="lane" data-who="leopard">
+          <div class="who"><span data-i18n="finish.pick.leopard">Leopard</span><small>58 km/h</small></div>
+          <div class="track"><div class="trail"></div><div class="runner"></div></div>
+          <div class="time">0.0 s</div>
+        </div>
+        <div class="race-foot">
+          <p id="outcome"></p>
+          <button class="btn" id="replayBtn" type="button" data-i18n="finish.watch">Watch again</button>
+        </div>
+      </div>
+
+      <p class="fine" data-i18n="finish.fine">Top speeds are estimates, and sources do not agree exactly. These are commonly quoted figures, and the gap is small enough that either animal could win on a given day. Treat it as a photo finish.</p>
+
+      <div class="reveal">
+        <div class="reveal-grid">
+          <div>
+            <h3 class="h3" data-i18n="finish.facts.h">Fun facts</h3>
+            <ul class="facts">
+              <li data-i18n="finish.fact1">This looks like a black-backed jackal. The black saddle with silver streaks down its back gives the species its name.</li>
+              <li data-i18n="finish.fact2">Black-backed jackals often pair for life, and older pups sometimes stay on to help raise the next litter.</li>
+              <li data-i18n="finish.fact4">A leopard can haul prey heavier than itself up a tree to keep it away from lions and hyenas.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="btn" id="againBtn" type="button" data-i18n="btn.again">Play again</button>
+          <a class="btn btn-primary" data-next href="index.html#frames">Next frame</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="pager" aria-label="Frames" data-pager></nav>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p data-i18n="footer">Photographed in Tanzania on a Canon L-series 400 mm lens.</p>
+  </div>
+</footer>
+
+<noscript><p class="wrap">This game needs JavaScript to run.</p></noscript>
+<script src="js/i18n.js"></script>
+<script src="js/frames.js"></script>
+<script src="js/zoom.js"></script>
+<script src="js/finish.js"></script>
+</body>
+</html>

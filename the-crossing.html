@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="cross.doc">The Crossing · Four Hundred Millimetres</title>
+<meta name="description" content="The Mara River in migration season. How many wildebeest can you find?">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d0e0b'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23ece9de' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='5' fill='none' stroke='%23d6283c' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="topbar" data-topbar></header>
+
+<main class="wrap" data-frame="the-crossing">
+  <div class="page-head">
+    <p class="eyebrow" data-frame-label></p>
+    <h1 data-i18n="cross.h1">The Crossing</h1>
+    <p class="lede" data-i18n="cross.lede">The Great Migration on the Mara River, in the northern Serengeti. Hundreds of wildebeest were crossing, and the crocodiles were waiting. How many wildebeest can you find in this frame? Tap each one to circle it.</p>
+  </div>
+
+  <section class="game" aria-labelledby="statusTitle">
+    <figure class="frame">
+      <div class="hud"><span data-frame-label></span></div>
+      <div class="stage-slot" style="--ar: 2000 / 1333">
+        <div class="vf zoomable stage" id="stage" tabindex="0" role="group" aria-label="Photo. Tap a wildebeest to circle it. Use the zoom buttons, or the plus, minus and arrow keys, to look closer." data-i18n-attr="aria-label:cross.stageAria">
+          <img src="images/wildebeest.jpg" data-full="images/wildebeest-large.jpg" data-full-width="4752" width="2000" height="1333" alt="The brown Mara River. Wildebeest wade across in the foreground, a crocodile in the middle holds its prey under the water with only a leg showing, and a wildebeest lies on the far bank." data-i18n-attr="alt:cross.photoAlt">
+          <div class="marks" id="marks" aria-hidden="true"></div>
+        </div>
+      </div>
+    </figure>
+
+    <div class="statusbar">
+      <p class="status" id="status" role="status" aria-live="polite">Tap each wildebeest you can see. Zoom in to look closer.</p>
+      <p class="count" id="statusTitle"><strong id="count">0</strong> <span data-i18n="cross.circled">circled</span></p>
+      <div class="actions">
+        <button class="btn btn-primary" id="doneBtn" type="button" data-i18n="cross.done">I’m done</button>
+        <button class="btn" id="resetBtn" type="button" data-i18n="cross.reset">Start over</button>
+      </div>
+    </div>
+
+    <div class="reveal" id="reveal" tabindex="-1" hidden>
+      <div class="complete">
+        <h2 class="h2" id="resultTitle"></h2>
+        <p id="resultText"></p>
+      </div>
+      <div class="reveal-grid">
+        <div>
+          <h3 class="h3" data-i18n="cross.story.h">The story</h3>
+          <p data-i18n="cross.story.p1">This was the Great Migration in the northern Serengeti, where hundreds of wildebeest were crossing the Mara River. In the middle of the frame a crocodile has taken one of them. All you can see is a leg above the water.</p>
+          <p data-i18n="cross.story.p2">Another wildebeest, hurt, perhaps by the same crocodile, is resting on the far bank.</p>
+        </div>
+        <div>
+          <h3 class="h3" data-i18n="cross.facts.h">Fun facts</h3>
+          <ul class="facts">
+            <li data-i18n="cross.fact1">In the Serengeti, a hurt animal rarely survives for long. Lions, hyenas and crocodiles are quick to pick out the weak and the slow.</li>
+            <li data-i18n="cross.fact2">Each year well over a million wildebeest, with hundreds of thousands of zebras and gazelles, follow the rains on a great loop through the Serengeti and Kenya’s Maasai Mara.</li>
+            <li data-i18n="cross.fact3">Crocodiles hunt by ambush: they wait in the water, grab an animal and drag it under.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" data-next href="index.html#frames">Next frame</a>
+        <button class="btn" id="againBtn" type="button" data-i18n="btn.again">Play again</button>
+      </div>
+    </div>
+  </section>
+
+  <nav class="pager" aria-label="Frames" data-pager></nav>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p data-i18n="footer">Photographed in Tanzania on a Canon L-series 400 mm lens.</p>
+  </div>
+</footer>
+
+<noscript><p class="wrap">This game needs JavaScript to run.</p></noscript>
+<script src="js/i18n.js"></script>
+<script src="js/frames.js"></script>
+<script src="js/zoom.js"></script>
+<script src="js/crossing.js"></script>
+</body>
+</html>

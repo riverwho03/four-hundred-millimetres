@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="roller.doc">Count the Colours · Four Hundred Millimetres</title>
+<meta name="description" content="One small bird, a whole paint box. How many colours is a lilac-breasted roller wearing?">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d0e0b'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23ece9de' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='5' fill='none' stroke='%23d6283c' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="topbar" data-topbar></header>
+
+<main class="wrap" data-frame="colour-count">
+  <div class="page-head">
+    <p class="eyebrow" data-frame-label></p>
+    <h1 data-i18n="roller.h1">Count the Colours</h1>
+    <p class="lede" data-i18n="roller.lede">A lilac-breasted roller waits on a thorn branch, looking like a paint box with wings. Zoom in for a closer look.</p>
+  </div>
+
+  <section class="quiz" aria-labelledby="q">
+    <figure class="frame">
+      <div class="hud"><span data-frame-label></span></div>
+      <div class="stage-slot" style="--ar: 2000 / 1333">
+        <div class="vf zoomable stage" id="stage" tabindex="0" role="group" aria-label="Photo. Tap the bird to find its colours. Use the zoom buttons, or the plus, minus and arrow keys, to look closer." data-i18n-attr="aria-label:roller.stageAria">
+          <img src="images/roller.jpg" data-full="images/roller-large.jpg" data-full-width="4752" width="2000" height="1333" alt="A small, brightly coloured bird perched on top of a thorny branch, against pale golden grass." data-i18n-attr="alt:roller.photoAlt">
+          <div class="marks" id="marks" aria-hidden="true"></div>
+        </div>
+      </div>
+    </figure>
+
+    <!-- Step 2 sits right under the photo so the task stays next to the picture; it appears after the first answer. -->
+    <div class="step" id="step2" hidden>
+      <h2 class="h2" id="q2" data-i18n="roller.find.h">Now find all eight</h2>
+      <p class="step-p" data-i18n="roller.find.p">Tap the bird to find each colour. We have zoomed in for you; use the zoom buttons to look around.</p>
+      <div class="statusbar">
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+        <p class="count"><strong id="foundCount">0</strong> <span data-i18n="roller.ofFound">/ 8 found</span></p>
+        <div class="actions"><button class="btn" id="restBtn" type="button" data-i18n="roller.showRest">Show me the rest</button></div>
+      </div>
+      <ol class="palette" id="palette" aria-label="The eight colours" data-i18n-attr="aria-label:roller.paletteAria"></ol>
+
+      <div class="reveal" id="reveal" tabindex="-1" hidden>
+        <div class="complete">
+          <h2 class="h2" data-i18n="roller.done.h">All eight colours</h2>
+          <p id="doneText"></p>
+        </div>
+        <div>
+          <h3 class="h3" data-i18n="roller.facts.h">Fun facts</h3>
+          <ul class="facts">
+            <li data-i18n="roller.fact1">It hunts from a high perch like this one, then swoops down on insects, scorpions, centipedes, snails and even small birds.</li>
+            <li data-i18n="roller.fact2">In courtship it dives from high up and rolls from side to side as it levels out. That rolling flight gave rollers their name.</li>
+            <li data-i18n="roller.fact3">For such a beautiful bird, its call is surprisingly rough: a harsh, sawing “rak rak rak”. You can hear it in Frame 08.</li>
+          </ul>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" data-next href="index.html#frames">Next frame</a>
+          <button class="btn" id="againBtn" type="button" data-i18n="btn.again">Play again</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" id="step1">
+      <h2 class="h2" id="q" data-i18n="roller.q">How many colours does a lilac-breasted roller have?</h2>
+      <ul class="opts" id="opts"></ul>
+      <p class="feedback" id="feedback" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <nav class="pager" aria-label="Frames" data-pager></nav>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p data-i18n="footer">Photographed in Tanzania on a Canon L-series 400 mm lens.</p>
+  </div>
+</footer>
+
+<noscript><p class="wrap">This game needs JavaScript to run.</p></noscript>
+<script src="js/i18n.js"></script>
+<script src="js/frames.js"></script>
+<script src="js/zoom.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/roller-map.js"></script>
+<script src="js/roller.js"></script>
+</body>
+</html>

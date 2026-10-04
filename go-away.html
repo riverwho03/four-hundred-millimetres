@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="goaway.doc">Go Away! · Four Hundred Millimetres</title>
+<meta name="description" content="Three bird calls. Which one belongs to the go-away-bird?">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d0e0b'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23ece9de' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='5' fill='none' stroke='%23d6283c' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="topbar" data-topbar></header>
+
+<main class="wrap" data-frame="go-away">
+  <div class="page-head">
+    <p class="eyebrow" data-frame-label></p>
+    <h1 data-i18n="goaway.h1">Go Away!</h1>
+    <p class="lede" data-i18n="goaway.lede">A bare-faced go-away-bird keeps watch from a thorn tree, crest raised. Go-away-birds are named after their loud calls. Can you pick its voice out of three?</p>
+  </div>
+
+  <section class="quiz" aria-labelledby="q">
+    <figure class="frame">
+      <div class="hud"><span data-frame-label></span></div>
+      <div class="stage-slot" style="--ar: 2000 / 1333">
+        <div class="vf zoomable" id="stage" tabindex="0" role="group" aria-label="Photo. Use the zoom buttons, or the plus, minus and arrow keys, to look closer." data-i18n-attr="aria-label:zoom.stage">
+          <img src="images/goaway.jpg" data-full="images/goaway-large.jpg" data-full-width="4752" width="2000" height="1333" alt="A grey bird with a tall crest, a bare black face and a white chest, perched in a thorny tree against a pale sky." data-i18n-attr="alt:goaway.photoAlt">
+        </div>
+      </div>
+    </figure>
+
+    <h2 class="h2" id="q" data-i18n="goaway.q">Which sound is the go-away-bird?</h2>
+    <p class="step-p" data-i18n="goaway.how">Play all three, then choose. Turn your sound on.</p>
+    <ul class="sounds" id="sounds" aria-label="The three sounds" data-i18n-attr="aria-label:goaway.soundsAria"></ul>
+    <p class="feedback" id="feedback" role="status" aria-live="polite"></p>
+
+    <div class="reveal" id="reveal" tabindex="-1" hidden>
+      <div class="bonus">
+        <h3 class="h3" data-i18n="goaway.bonus.h">The famous “go-away”</h3>
+        <p data-i18n="goaway.bonus.p">The best-known version of the call belongs to its southern cousin, the grey go-away-bird. Its loud, nasal call is often written as “kweh” or “go-way”, and that is where go-away-birds get their name. This video from Wild Ambience on YouTube starts at the call.</p>
+        <div id="videoSlot">
+          <div class="actions">
+            <button class="btn btn-primary" id="videoBtn" type="button" data-i18n="goaway.bonus.play">Play the video here</button>
+            <a class="btn" href="https://www.youtube.com/watch?v=aKEbeE7H7Wk&amp;t=53s" target="_blank" rel="noopener" data-i18n="goaway.bonus.open">Open on YouTube</a>
+          </div>
+        </div>
+        <p class="fine" data-i18n="goaway.bonus.note">The video comes from YouTube, so it only loads when you ask for it.</p>
+      </div>
+      <div class="reveal-grid">
+        <div>
+          <h3 class="h3" data-i18n="goaway.facts.h">Fun facts</h3>
+          <ul class="facts">
+            <li data-i18n="goaway.fact1">Go-away-birds belong to the turaco family, a group of birds found only in Africa.</li>
+            <li data-i18n="goaway.fact2">The bare-faced go-away-bird’s calls include a loud, repeated “kow-kow”.</li>
+            <li data-i18n="goaway.fact3">The hadada ibis and the go-away-birds are all named after the sounds they make.</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h3 class="h3" data-i18n="goaway.credits.h">Sound credits</h3>
+        <ul class="credits">
+          <li><span data-i18n="goaway.cr.goaway">Bare-faced go-away-bird: recorded by A.R. Gregory in the Masai Mara, Kenya (British Library).</span>
+            <a href="https://commons.wikimedia.org/wiki/File:Bare-faced_go-away_Bird_(Corythaixoides_personata)_(022A-WA03044X0032-0005M0).ogg" target="_blank" rel="noopener" data-i18n="credit.via">via Wikimedia Commons</a>,
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></li>
+          <li><span data-i18n="goaway.cr.hadada">Hadada ibis: recorded by JMK in Pretoria, South Africa.</span>
+            <a href="https://commons.wikimedia.org/wiki/File:Bostrychia_hagedash_hagadash,_roepe_in_Pta,_2022-05-24_06h53,_a.mp3" target="_blank" rel="noopener" data-i18n="credit.via">via Wikimedia Commons</a>,
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></li>
+          <li><span data-i18n="goaway.cr.roller">Lilac-breasted roller: recorded by JMK in Gauteng, South Africa.</span>
+            <a href="https://commons.wikimedia.org/wiki/File:Coracias_caudatus_caudatus,_roep_in_vlug_te_Krokodilspruit,_2022-05-28_13h18,_a.mp3" target="_blank" rel="noopener" data-i18n="credit.via">via Wikimedia Commons</a>,
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></li>
+        </ul>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" data-next href="index.html#frames">Next frame</a>
+        <button class="btn" id="againBtn" type="button" data-i18n="btn.again">Play again</button>
+      </div>
+    </div>
+  </section>
+
+  <nav class="pager" aria-label="Frames" data-pager></nav>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p data-i18n="footer">Photographed in Tanzania on a Canon L-series 400 mm lens.</p>
+  </div>
+</footer>
+
+<noscript><p class="wrap">This game needs JavaScript to run.</p></noscript>
+<script src="js/i18n.js"></script>
+<script src="js/frames.js"></script>
+<script src="js/zoom.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/goaway.js"></script>
+</body>
+</html>
