@@ -99,6 +99,8 @@
       'story.cap.maasai-herders': 'Young Maasai herders and their animals',
       'story.cap.three-friends': 'Three friends on the road',
       'story.cap.girl-in-mugumu': 'A shy girl in Mugumu',
+      'story.cap.kilimanjaro-day-hike': 'A day hike on Kilimanjaro',
+      'story.cap.moshi-tailor-shop': 'Our favourite tailor shop in Moshi',
 
       'spot.doc': 'Spot the Six · Four Hundred Millimetres',
       'spot.h1': 'Spot the Six',
@@ -472,6 +474,8 @@
       'story.cap.maasai-herders': '年轻的马赛牧人和他们的牲畜',
       'story.cap.three-friends': '路上的三个好朋友',
       'story.cap.girl-in-mugumu': '姆古穆一个害羞的小女孩',
+      'story.cap.kilimanjaro-day-hike': '乞力马扎罗山一日徒步',
+      'story.cap.moshi-tailor-shop': '我们在莫希最喜欢的裁缝店',
 
       'spot.doc': '找出六种动物 · 四百毫米',
       'spot.h1': '找出六种动物',
