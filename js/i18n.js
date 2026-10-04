@@ -55,7 +55,6 @@
 
       'gal.doc': 'Gallery · Four Hundred Millimetres',
       'gal.h1': 'Gallery',
-      'gal.lede': 'Everything else we photographed in Tanzania, in the order we took it. Tap a photo to see it big, then zoom in for a closer look.',
       'gal.count.one': '{n} photo',
       'gal.count.many': '{n} photos',
       'gal.filterAria': 'Show photos of',
@@ -81,7 +80,7 @@
       'story.p1': 'In mid-September 2026 we spent our honeymoon on safari in Tanzania, from the great river crossing in the northern Serengeti to the floor of Ngorongoro Crater. We loved every minute of it.',
       'story.p2': 'Every photo on this site was taken by the two of us: happy amateurs with one long lens and a lot of patience. We made these little games so the memories have a home, and so you can share a bit of the wonder we felt.',
       'story.day1.h': 'Day one',
-      'story.day1.p': 'Arriving in the Serengeti.',
+      'story.day1.p': 'Arriving in the Serengeti. Serengeti shall never die.',
       'story.lens.h': 'Two of us, one long lens',
       'story.lens.p': 'Most of our days were spent in the safari car, standing up through the roof with the camera ready and spotting animals for each other.',
       'story.carlos.h': 'Thank you, Carlos',
@@ -429,7 +428,6 @@
 
       'gal.doc': '相册 · 四百毫米',
       'gal.h1': '相册',
-      'gal.lede': '这里是我们在坦桑尼亚拍下的其他照片，按拍摄先后排列。点开一张看大图，还可以放大细看。',
       'gal.count.one': '{n} 张照片',
       'gal.count.many': '{n} 张照片',
       'gal.filterAria': '筛选照片',
@@ -455,7 +453,7 @@
       'story.p1': '2026 年 9 月中旬，我们在坦桑尼亚度过了猎游蜜月：从塞伦盖蒂北部壮观的角马渡河，到恩戈罗恩戈罗火山口的谷底。每一分钟我们都无比享受。',
       'story.p2': '这个网站上的每一张照片都是我们俩拍的：两个快乐的业余爱好者，一支长焦镜头，外加满满的耐心。我们做了这些小游戏，让这段回忆有个家，也希望你能感受到一点我们当时的惊喜。',
       'story.day1.h': '第一天',
-      'story.day1.p': '抵达塞伦盖蒂。',
+      'story.day1.p': '抵达塞伦盖蒂。塞伦盖蒂永不消亡。',
       'story.lens.h': '两个人，一支长焦镜头',
       'story.lens.p': '我们大部分时间都待在猎游车上，从车顶探出身子，举着相机，互相帮对方找动物。',
       'story.carlos.h': '谢谢你，Carlos',
