@@ -7,6 +7,10 @@
 // width / height are the size of the photo in pixels: they only set the shape and the coordinate system.
 // Ways to zoom: the + / - buttons, pinch, Ctrl + scroll (or a trackpad pinch), double-click, and the
 // keyboard. Ways to move: drag, or arrow keys. The full-screen button gives the photo the whole window.
+//
+// Drawing (optional): pass draw: { start(p), move(p), end(), cancel() } and call view.setTool('draw').
+// Then one finger or the mouse draws instead of moving the photo (p is a photo point from toImage);
+// two fingers still pinch and move, and cancel the line in progress. view.setTool('move') switches back.
 (() => {
   'use strict';
 
@@ -31,6 +35,7 @@
     let s = 1, fx = 0, fy = 0;
     let boxW = 0, boxH = 0, fitW = 0, fitH = 0, offX = 0, offY = 0;
     let expanded = false, moved = false, raf = 0, tween = 0, tweenTarget = null, startX = 0, startY = 0, pinch = null, inerted = [];
+    let tool = 'move', drawing = false;          // tool 'draw': one pointer draws (opts.draw) instead of moving
     const pointers = new Map();
 
     img.draggable = false;
@@ -248,8 +253,13 @@
       tweenTarget = null;
       pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
       try { stage.setPointerCapture(e.pointerId); } catch (err) { /* synthetic or finished pointer */ }
-      if (pointers.size === 1) { moved = false; startX = e.clientX; startY = e.clientY; }
-      else if (pointers.size === 2) { moved = true; startPinch(); }
+      if (pointers.size === 1) {
+        moved = false; startX = e.clientX; startY = e.clientY;
+        if (tool === 'draw' && opts.draw) { drawing = true; opts.draw.start(toImage(e.clientX, e.clientY)); }
+      } else if (pointers.size === 2) {
+        if (drawing) { drawing = false; if (opts.draw.cancel) opts.draw.cancel(); }   // a second finger means pinch
+        moved = true; startPinch();
+      }
     });
     stage.addEventListener('pointermove', e => {
       const p = pointers.get(e.pointerId);
@@ -257,6 +267,11 @@
       const dx = e.clientX - p.x, dy = e.clientY - p.y;
       p.x = e.clientX; p.y = e.clientY;
       if (pointers.size === 1) {
+        if (drawing) {                     // every point the browser saw, for a smooth line
+          const seen = e.getCoalescedEvents ? e.getCoalescedEvents() : [];
+          (seen.length ? seen : [e]).forEach(c => opts.draw.move(toImage(c.clientX, c.clientY)));
+          return;
+        }
         if (!moved && Math.hypot(e.clientX - startX, e.clientY - startY) > DRAG_PX) moved = true;
         if (moved && s > 1.001) {
           fx += dx / fitW; fy += dy / fitH;
@@ -275,15 +290,16 @@
     });
     function release(e) {
       pointers.delete(e.pointerId);
+      if (drawing && pointers.size === 0) { drawing = false; opts.draw.end(); }
       if (pointers.size < 2) pinch = null;
       if (pointers.size === 0) stage.classList.remove('is-dragging');
     }
     stage.addEventListener('pointerup', release);
     stage.addEventListener('pointercancel', release);
 
-    // Two fingers must not scroll the page, and neither should one finger while zoomed in.
+    // Two fingers must not scroll the page, and neither should one finger while zoomed in or drawing.
     stage.addEventListener('touchmove', e => {
-      if (e.touches.length > 1 || s > 1.001 || expanded) e.preventDefault();
+      if (e.touches.length > 1 || s > 1.001 || expanded || tool === 'draw') e.preventDefault();
     }, { passive: false });
 
     // ---------- wheel, double-click, keyboard ----------
@@ -299,7 +315,7 @@
 
     if (opts.dblclick) {
       stage.addEventListener('dblclick', e => {
-        if (ignore(e.target)) return;
+        if (ignore(e.target) || tool === 'draw') return;
         const r = stage.getBoundingClientRect();
         zoomAnimated(s > 1.05 ? 1 : 2.5, e.clientX - r.left, e.clientY - r.top);
       });
@@ -337,7 +353,10 @@
       wasDrag: () => moved,
       reset: () => zoomTo(1, 0, 0),
       layout: apply,
-      focusOn, setImage
+      focusOn, setImage,
+      setTool(t) { tool = t === 'draw' ? 'draw' : 'move'; stage.classList.toggle('is-drawing', tool === 'draw'); },
+      get tool() { return tool; },
+      get expanded() { return expanded; }
     };
   }
 

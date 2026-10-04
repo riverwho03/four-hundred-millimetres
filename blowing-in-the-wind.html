@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="drool.doc">Blowing in the Wind · Four Hundred Millimetres</title>
+<meta name="description" content="Something is blowing in the wind from this young giraffe’s mouth. Can you trace it?">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d0e0b'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23ece9de' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='5' fill='none' stroke='%23d6283c' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="topbar" data-topbar></header>
+
+<main class="wrap" data-frame="blowing-in-the-wind">
+  <div class="page-head">
+    <p class="eyebrow" data-frame-label></p>
+    <h1 data-i18n="drool.h1">Blowing in the Wind</h1>
+    <p class="lede" data-i18n="drool.lede">Look closely at this young giraffe’s mouth. Something is blowing in the wind.</p>
+  </div>
+
+  <section class="quiz" aria-labelledby="q">
+    <figure class="frame">
+      <div class="hud">
+        <span data-frame-label></span>
+        <div class="seg" id="tools" role="group" aria-label="What dragging does" data-i18n-attr="aria-label:drool.tools">
+          <button type="button" data-tool="draw" aria-pressed="true" data-i18n="drool.tool.draw">Draw</button>
+          <button type="button" data-tool="move" aria-pressed="false" data-i18n="drool.tool.move">Move</button>
+        </div>
+      </div>
+      <div class="stage-slot" style="--ar: 2100 / 1400">
+        <div class="vf zoomable" id="stage" tabindex="0" role="group" aria-label="Photo. Draw along the drool with your finger or mouse. Use the zoom buttons, or the plus, minus and arrow keys, to look closer." data-i18n-attr="aria-label:drool.stageAria">
+          <img src="images/drool.jpg" data-full="images/drool-large.jpg" data-full-width="2100" width="2100" height="1400" alt="A young giraffe seen from the side against green bushes. A thin, shiny string of drool hangs from its mouth and curves down to its chest." data-i18n-attr="alt:drool.photoAlt">
+          <svg class="ink" id="ink" aria-hidden="true"></svg>
+        </div>
+      </div>
+    </figure>
+
+    <h2 class="h2" id="q" data-i18n="drool.q">Find the drool and trace it</h2>
+    <p class="step-p" data-i18n="drool.how">Start at the mouth and follow it all the way down. Zoom in if you need to. You need 80% accuracy to win.</p>
+    <p class="fine" data-i18n="drool.tip">Tip: when you are zoomed in, switch to Move to drag the photo around. On a phone, two fingers zoom and move too.</p>
+    <div class="actions">
+      <button class="btn btn-primary" id="checkBtn" type="button" data-i18n="drool.check">Check my line</button>
+      <button class="btn" id="clearBtn" type="button" data-i18n="drool.clear">Clear</button>
+      <button class="btn" id="showBtn" type="button" hidden data-i18n="drool.show">Show me where it is</button>
+    </div>
+    <p class="verdict-sm" id="verdict" aria-hidden="true"></p>
+    <p class="feedback" id="feedback" role="status" aria-live="polite"></p>
+
+    <div class="reveal" id="reveal" tabindex="-1" hidden>
+      <div class="callout">
+        <h3 class="h3" data-i18n="drool.why.h">Why was drool blowing in the wind?</h3>
+        <p data-i18n="drool.why">Because it had just had milk from mum. So cute!</p>
+      </div>
+      <figure class="frame">
+        <div class="hud"><span data-i18n="drool.milk.h">52 seconds earlier</span></div>
+        <div class="stage-slot" style="--ar: 2000 / 1500">
+          <div class="vf zoomable" id="milkStage" tabindex="0" role="group" aria-label="Photo. Use the zoom buttons, or the plus, minus and arrow keys, to look closer." data-i18n-attr="aria-label:zoom.stage">
+            <img src="images/giraffe-milk.jpg" data-full="images/giraffe-milk-large.jpg" data-full-width="3168" width="2000" height="1500" alt="A giraffe mother bends her head down to graze while her calf drinks milk from under her belly." data-i18n-attr="alt:drool.milk.alt">
+          </div>
+        </div>
+        <figcaption class="fine" data-i18n="drool.milk.cap">Milk time: the calf drinking from mum, 52 seconds before the drool photo.</figcaption>
+      </figure>
+      <div class="reveal-grid">
+        <div>
+          <h3 class="h3" data-i18n="drool.facts.h">Fun facts</h3>
+          <ul class="facts">
+            <li data-i18n="drool.fact1">Giraffes give birth standing up, so a calf starts life with a drop of about 1.5 metres. Within an hour it is standing.</li>
+            <li data-i18n="drool.fact2">Calves drink their mother’s milk for about a year, and start nibbling leaves after a few months.</li>
+            <li data-i18n="drool.fact3">While the mothers feed, calves often stay together in a group, called a crèche, with an adult keeping watch.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" data-next href="index.html#frames">Next frame</a>
+        <button class="btn" id="againBtn" type="button" data-i18n="btn.again">Play again</button>
+      </div>
+    </div>
+  </section>
+
+  <nav class="pager" aria-label="Frames" data-pager></nav>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p data-i18n="footer">Photographed in Tanzania by River and Calvin on a Canon L-series 400 mm lens.</p>
+  </div>
+</footer>
+
+<noscript><p class="wrap">This game needs JavaScript to run.</p></noscript>
+<script src="js/i18n.js"></script>
+<script src="js/frames.js"></script>
+<script src="js/zoom.js"></script>
+<script src="js/drool.js"></script>
+</body>
+</html>
