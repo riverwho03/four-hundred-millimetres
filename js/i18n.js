@@ -243,7 +243,7 @@
 
       'roller.doc': 'Count the Colours · Four Hundred Millimetres',
       'roller.h1': 'Count the Colours',
-      'roller.lede': 'A lilac-breasted roller waits on a thorn branch, looking like a paint box with wings. Zoom in for a closer look.',
+      'roller.lede': 'In Tarangire, a lilac-breasted roller waits on a thorn branch. What a beautiful colour palette! Zoom in for a closer look.',
       'roller.photoAlt': 'A small, brightly coloured bird perched on top of a thorny branch, against pale golden grass.',
       'roller.stageAria': 'Photo. Tap the bird to find its colours. Use the zoom buttons, or the plus, minus and arrow keys, to look closer.',
       'roller.q': 'How many colours does a lilac-breasted roller have?',
@@ -610,7 +610,7 @@
 
       'roller.doc': '数一数颜色 · 四百毫米',
       'roller.h1': '数一数颜色',
-      'roller.lede': '一只紫胸佛法僧停在荆棘枝头，看上去就像一盒长了翅膀的颜料。放大仔细看看吧。',
+      'roller.lede': '在塔兰吉雷，一只紫胸佛法僧停在荆棘枝头。多么漂亮的调色盘！放大仔细看看吧。',
       'roller.photoAlt': '一只色彩鲜艳的小鸟停在一根带刺树枝的顶端，背景是淡金色的草地。',
       'roller.stageAria': '照片。点击小鸟找出它的颜色。可用缩放按钮，或加号、减号和方向键，放大细看。',
       'roller.q': '一只紫胸佛法僧身上有几种颜色？',
