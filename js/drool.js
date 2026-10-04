@@ -1,19 +1,24 @@
 (() => {
   'use strict';
 
-  const W = 2100, H = 1400;          // size of the photo in pixels (a crop of the original, at full size)
+  const W = 1107, H = 1660;          // size of the photo in pixels (an upright crop of the original, at full size)
 
-  // The drool, from the calf's mouth down to where it meets its chest, in photo pixels.
-  // Traced from the photo itself with work/Strand.cs.
-  const DROOL = [[595, 500], [592, 512], [586, 524], [580, 536], [574, 548], [572, 560], [573, 572], [571, 584],
-    [570, 596], [572, 608], [573, 620], [576, 632], [581, 644], [589, 656], [599, 668], [610, 680], [620, 692],
-    [631, 704], [643, 716], [657, 728], [669, 740], [677, 752], [683, 764], [688, 776], [695, 788], [703, 800],
-    [713, 812], [726, 824], [746, 836], [761, 848], [774, 860], [791, 872], [809, 884], [829, 896], [846, 908],
-    [859, 920], [872, 932], [885, 944], [900, 956], [915, 968], [930, 980], [944, 992], [953, 1004], [961, 1016],
-    [967, 1028], [973, 1040], [977, 1052], [981, 1064], [983, 1076], [985, 1088], [986, 1100], [989, 1112],
-    [986, 1124], [985, 1126]];
+  // The drool in photo pixels: from the calf's mouth, past its chest, then down to the left until it fades
+  // over the grass. Traced from the photo with work/Strand.cs (the short stretch over the chest, where the
+  // fur hides it, was read from its thin-line view).
+  const DROOL = [[328, 310], [325, 322], [319, 334], [313, 346], [307, 358], [305, 370], [306, 382], [304, 394],
+    [303, 406], [305, 418], [306, 430], [309, 442], [314, 454], [322, 466], [332, 478], [343, 490], [353, 502],
+    [364, 514], [376, 526], [390, 538], [402, 550], [410, 562], [416, 574], [421, 586], [428, 598], [436, 610],
+    [446, 622], [459, 634], [479, 646], [494, 658], [507, 670], [524, 682], [542, 694], [562, 706], [579, 718],
+    [592, 730], [605, 742], [618, 754], [633, 766], [648, 778], [663, 790], [677, 802], [686, 814], [694, 826],
+    [700, 838], [706, 850], [710, 862], [714, 874], [716, 886], [718, 898], [719, 910], [722, 922], [719, 934],
+    [718, 936], [719, 970], [717, 1010], [715, 1057], [709, 1110], [698, 1160], [684, 1210], [671, 1255],
+    [659, 1285], [657, 1297], [652, 1309], [647, 1321], [643, 1333], [637, 1345], [632, 1357], [626, 1369],
+    [620, 1381], [614, 1393], [608, 1405], [601, 1417], [594, 1429], [587, 1441], [579, 1453], [570, 1465],
+    [561, 1477], [553, 1489], [546, 1501], [537, 1513], [530, 1525], [523, 1537], [516, 1549], [510, 1561],
+    [504, 1573], [499, 1585], [494, 1597]];
 
-  const WIN = 0.8;                   // 80% accuracy wins
+  const WIN = 0.7;                   // 70% accuracy wins
   const STEP = 4;                    // lines are compared every 4 photo pixels
   // How far from the drool still counts as on it: 12 screen pixels at the zoom the line was drawn at,
   // kept between 14 and 45 photo pixels (so zooming in makes it fairer, never sloppier).
@@ -119,7 +124,7 @@
   const droolSamples = resample(droolPts, STEP);
 
   // Accuracy is the lower of two things: how much of the drool your line covers, and how much of your line
-  // is on the drool. So 80% means at least 80% of the drool traced, with at least 80% of your line on it:
+  // is on the drool. So 70% means at least 70% of the drool traced, with at least 70% of your line on it:
   // covering it all with a scribble, or drawing a perfect short piece, both fall short.
   function score() {
     const pts = [].concat(...strokes.map(s => resample(s, STEP)));

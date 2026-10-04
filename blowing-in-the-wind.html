@@ -22,7 +22,7 @@
     <p class="lede" data-i18n="drool.lede">Look closely at this young giraffe’s mouth. Something is blowing in the wind.</p>
   </div>
 
-  <section class="quiz" aria-labelledby="q">
+  <section class="quiz split" aria-labelledby="q">
     <figure class="frame">
       <div class="hud">
         <span data-frame-label></span>
@@ -31,26 +31,29 @@
           <button type="button" data-tool="move" aria-pressed="false" data-i18n="drool.tool.move">Move</button>
         </div>
       </div>
-      <div class="stage-slot" style="--ar: 2100 / 1400">
+      <div class="stage-slot tall" style="--ar: 1107 / 1660">
         <div class="vf zoomable" id="stage" tabindex="0" role="group" aria-label="Photo. Draw along the drool with your finger or mouse. Use the zoom buttons, or the plus, minus and arrow keys, to look closer." data-i18n-attr="aria-label:drool.stageAria">
-          <img src="images/drool.jpg" data-full="images/drool-large.jpg" data-full-width="2100" width="2100" height="1400" alt="A young giraffe seen from the side against green bushes. A thin, shiny string of drool hangs from its mouth and curves down to its chest." data-i18n-attr="alt:drool.photoAlt">
+          <img src="images/drool.jpg" width="1107" height="1660" alt="A young giraffe seen from the side against green bushes. A long, thin, shiny string of drool hangs from its mouth, past its chest and down towards the grass." data-i18n-attr="alt:drool.photoAlt">
           <svg class="ink" id="ink" aria-hidden="true"></svg>
         </div>
       </div>
     </figure>
 
-    <h2 class="h2" id="q" data-i18n="drool.q">Find the drool and trace it</h2>
-    <p class="step-p" data-i18n="drool.how">Start at the mouth and follow it all the way down. Zoom in if you need to. You need 80% accuracy to win.</p>
-    <p class="fine" data-i18n="drool.tip">Tip: when you are zoomed in, switch to Move to drag the photo around. On a phone, two fingers zoom and move too.</p>
-    <div class="actions">
-      <button class="btn btn-primary" id="checkBtn" type="button" data-i18n="drool.check">Check my line</button>
-      <button class="btn" id="clearBtn" type="button" data-i18n="drool.clear">Clear</button>
-      <button class="btn" id="showBtn" type="button" hidden data-i18n="drool.show">Show me where it is</button>
+    <div class="step">
+      <h2 class="h2" id="q" data-i18n="drool.q">Find the drool and trace it</h2>
+      <p class="step-p" data-i18n="drool.how">Start at the mouth and follow it all the way down. Zoom in if you need to. You need 70% accuracy to win.</p>
+      <p class="fine" data-i18n="drool.tip">Tip: when you are zoomed in, switch to Move to drag the photo around. On a phone, two fingers zoom and move too.</p>
+      <div class="actions">
+        <button class="btn btn-primary" id="checkBtn" type="button" data-i18n="drool.check">Check my line</button>
+        <button class="btn" id="clearBtn" type="button" data-i18n="drool.clear">Clear</button>
+        <button class="btn" id="showBtn" type="button" hidden data-i18n="drool.show">Show me where it is</button>
+      </div>
+      <p class="verdict-sm" id="verdict" aria-hidden="true"></p>
+      <p class="feedback" id="feedback" role="status" aria-live="polite"></p>
     </div>
-    <p class="verdict-sm" id="verdict" aria-hidden="true"></p>
-    <p class="feedback" id="feedback" role="status" aria-live="polite"></p>
+  </section>
 
-    <div class="reveal" id="reveal" tabindex="-1" hidden>
+    <div class="reveal quiz" id="reveal" tabindex="-1" hidden>
       <div class="callout">
         <h3 class="h3" data-i18n="drool.why.h">Why was drool blowing in the wind?</h3>
         <p data-i18n="drool.why">Because it had just had milk from mum. So cute!</p>
@@ -79,7 +82,6 @@
         <button class="btn" id="againBtn" type="button" data-i18n="btn.again">Play again</button>
       </div>
     </div>
-  </section>
 
   <nav class="pager" aria-label="Frames" data-pager></nav>
 </main>
