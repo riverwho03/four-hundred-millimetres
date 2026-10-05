@@ -679,6 +679,7 @@ html[lang="zh-CN"] .story-hello, html[lang="zh-CN"] .story-sign { line-height: 1
 .teaser-strip { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
 .teaser-strip img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: var(--radius); transition: opacity .2s; }
 .teaser-strip:hover img { opacity: .85; }
+.reveal .end-story { padding: 24px 0 0; border-top: 1px solid var(--line); }   /* Our Story, after the last game */
 @media (max-width: 600px) {
   .teaser-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .teaser-strip img:nth-child(n + 4) { display: none; }

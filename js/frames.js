@@ -173,11 +173,38 @@
       };
       if (prev) pager.append(link('prev', T('pager.prev'), I18N.pick(prev, 'title'), prev.page));
       if (next) pager.append(link('next', T('pager.next'), I18N.pick(next, 'title') + ' →', next.page));
-      else pager.append(link('next', T('pager.all'), T('pager.back'), 'index.html#frames'));
+      else pager.append(link('next', T('pager.after'), T('nav.story') + ' →', 'our-story.html'));   // after the last game
     }
     document.querySelectorAll('[data-next]').forEach(a => {
       a.href = next ? next.page : 'index.html#frames';
       a.textContent = next ? T('btn.next', { title: I18N.pick(next, 'title') }) : T('btn.backAll');
+      a.classList.toggle('btn-primary', !!next);      // after the last game, Our Story is the main button
+    });
+    if (!next) renderStoryEnd();
+  }
+
+  // After the last game: the same Our Story strip as on the home page, shown with the answer.
+  const STORY_STRIP = ['river-and-calvin', 'calvin-with-the-lens', 'three-of-us-with-carlos', 'kilimanjaro-day-hike', 'african-braids'];
+  function renderStoryEnd() {
+    document.querySelectorAll('.reveal').forEach(rv => {
+      let box = rv.querySelector('.end-story');
+      if (!box) {
+        box = el('div', 'teaser end-story');
+        const strip = el('a', 'teaser-strip');
+        strip.href = 'our-story.html';
+        strip.tabIndex = -1;
+        strip.setAttribute('aria-hidden', 'true');
+        STORY_STRIP.forEach(id => { const img = new Image(); img.src = 'images/story/t/' + id + '.jpg'; img.alt = ''; img.loading = 'lazy'; strip.append(img); });
+        const actions = el('div', 'actions');
+        const btn = el('a', 'btn btn-primary');
+        btn.href = 'our-story.html';
+        actions.append(btn);
+        box.append(el('h3', 'h3'), strip, el('p'), actions);
+        rv.insertBefore(box, Array.from(rv.children).find(c => c.classList.contains('actions')) || null);
+      }
+      box.querySelector('h3').textContent = T('end.h');
+      box.querySelector('p').textContent = T('home.story.p');
+      box.querySelector('.btn').textContent = T('home.story.btn');
     });
   }
 
