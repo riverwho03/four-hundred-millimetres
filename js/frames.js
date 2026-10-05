@@ -23,11 +23,11 @@
       zh: { title: '斑马的视野', blurb: '展开扇形：斑马不转头，能看到身边多大的范围？' },
       thumb: 'images/thumb-zebra-eye.jpg', thumbPos: '40% 50%',
       shot: { mm: 275, f: '5.6', s: '1/2000', iso: 500 } },
-    { id: 'grooming', page: 'grooming.html', title: 'Grooming Time',
-      blurb: 'A gazelle twists round to tidy its coat. What is it using?',
-      zh: { title: '梳理时间', blurb: '一只瞪羚扭过头来打理皮毛。它用的是什么？' },
-      thumb: 'images/thumb-gazelle-2.jpg', thumbPos: '50% 35%',
-      shot: { mm: 400, f: '5.6', s: '1/4000', iso: 800 } },
+    { id: 'blowing-in-the-wind', page: 'blowing-in-the-wind.html', title: 'Blowing in the Wind',
+      blurb: 'Something is blowing in the wind from this young giraffe’s mouth. Can you trace it?',
+      zh: { title: '随风飘荡', blurb: '这只小长颈鹿的嘴边，有什么东西正随风飘荡。你能把它描出来吗？' },
+      thumb: 'images/thumb-drool.jpg', thumbPos: '35% 50%',
+      shot: { mm: 400, f: '5.6', s: '1/1600', iso: 640 } },
     { id: 'the-builder', page: 'the-builder.html', title: 'The Builder',
       blurb: 'A nest of sticks strong enough to hold a person. Which bird built it?',
       zh: { title: '筑巢者', blurb: '一个用树枝搭成、结实到能承受一个人重量的巢。是哪种鸟建的？' },
@@ -38,11 +38,6 @@
       zh: { title: '数一数颜色', blurb: '一只小鸟，就像一整盒颜料。它身上有几种颜色？' },
       thumb: 'images/thumb-roller.jpg', thumbPos: '35% 40%',
       shot: { mm: 220, f: '5', s: '1/400', iso: 200 } },
-    { id: 'blowing-in-the-wind', page: 'blowing-in-the-wind.html', title: 'Blowing in the Wind',
-      blurb: 'Something is blowing in the wind from this young giraffe’s mouth. Can you trace it?',
-      zh: { title: '随风飘荡', blurb: '这只小长颈鹿的嘴边，有什么东西正随风飘荡。你能把它描出来吗？' },
-      thumb: 'images/thumb-drool.jpg', thumbPos: '35% 50%',
-      shot: { mm: 400, f: '5.6', s: '1/1600', iso: 640 } },
     { id: 'go-away', page: 'go-away.html', title: 'Go Away!',
       blurb: 'Three bird calls. Which one belongs to the go-away-bird?',
       zh: { title: '走开！', blurb: '三段鸟叫声。哪一段属于“走开鸟”？' },
@@ -57,7 +52,12 @@
       blurb: 'The Mara River in migration season. How many wildebeest can you find?',
       zh: { title: '渡河', blurb: '迁徙季节的马拉河。你能找到几头角马？' },
       thumb: 'images/thumb-wildebeest.jpg', thumbPos: '55% 60%', readoutTop: true,
-      shot: { mm: 260, f: '5.6', s: '1/2000', iso: 320 } }
+      shot: { mm: 260, f: '5.6', s: '1/2000', iso: 320 } },
+    { id: 'grooming', page: 'grooming.html', title: 'Grooming Time',
+      blurb: 'A gazelle twists round to tidy its coat. What is it using?',
+      zh: { title: '梳理时间', blurb: '一只瞪羚扭过头来打理皮毛。它用的是什么？' },
+      thumb: 'images/thumb-gazelle-2.jpg', thumbPos: '50% 35%',
+      shot: { mm: 400, f: '5.6', s: '1/4000', iso: 800 } }
   ];
 
   // Links in the top bar (their words are in i18n.js). `on` = the kinds of page that belong to that link:
